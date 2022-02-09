@@ -1,0 +1,400 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan  7 01:02:57 2022] ***
+compiled with version: 9.3.0 on 06 January 2022 13:07:01
+os: Linux-5.11.0-1023-aws #24~20.04.1-Ubuntu SMP Fri Dec 3 13:46:41 UTC 2021
+nodename: ip-172-31-37-35
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/sites
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /data/django/firstproject
+your processes number limit is 3824
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /data/django/firstproject/firstproject.sock fd 3
+setuid() to 1000
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+!!! Python Home is not a directory: /data/django/firstproject/myvenv !!!
+Set PythonHome to /data/django/firstproject/myvenv
+Python path configuration:
+  PYTHONHOME = '/data/django/firstproject/myvenv'
+  PYTHONPATH = (not set)
+  program name = '/data/django/firstproject/myvenv/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/data/django/firstproject/myvenv/bin/python'
+  sys.base_prefix = '/data/django/firstproject/myvenv'
+  sys.base_exec_prefix = '/data/django/firstproject/myvenv'
+  sys.executable = '/data/django/firstproject/myvenv/bin/python'
+  sys.prefix = '/data/django/firstproject/myvenv'
+  sys.exec_prefix = '/data/django/firstproject/myvenv'
+  sys.path = [
+    '/data/django/firstproject/myvenv/lib/python38.zip',
+    '/data/django/firstproject/myvenv/lib/python3.8',
+    '/data/django/firstproject/myvenv/lib/python3.8/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f2108fda740 (most recent call first):
+<no Python frame>
+unlink(): Permission denied [core/uwsgi.c line 1662]
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan  7 01:05:54 2022] ***
+compiled with version: 9.3.0 on 06 January 2022 13:07:01
+os: Linux-5.11.0-1023-aws #24~20.04.1-Ubuntu SMP Fri Dec 3 13:46:41 UTC 2021
+nodename: ip-172-31-37-35
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/sites
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /data/django/firstproject
+your processes number limit is 3824
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /data/django/firstproject/firstproject.sock fd 3
+setuid() to 1000
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /data/django/firstproject/myvenv
+Set PythonHome to /data/django/firstproject/myvenv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55a21870b370
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1239640 bytes (1210 KB) for 16 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'moon'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17003)
+spawned uWSGI worker 1 (pid: 17004, cores: 1)
+spawned uWSGI worker 2 (pid: 17005, cores: 1)
+spawned uWSGI worker 3 (pid: 17006, cores: 1)
+spawned uWSGI worker 4 (pid: 17007, cores: 1)
+spawned uWSGI worker 5 (pid: 17008, cores: 1)
+spawned uWSGI worker 6 (pid: 17009, cores: 1)
+spawned uWSGI worker 7 (pid: 17010, cores: 1)
+spawned uWSGI worker 8 (pid: 17011, cores: 1)
+spawned uWSGI worker 9 (pid: 17012, cores: 1)
+spawned uWSGI worker 10 (pid: 17013, cores: 1)
+spawned uWSGI worker 11 (pid: 17014, cores: 1)
+spawned uWSGI worker 12 (pid: 17015, cores: 1)
+spawned uWSGI worker 13 (pid: 17016, cores: 1)
+spawned uWSGI worker 14 (pid: 17017, cores: 1)
+spawned uWSGI worker 15 (pid: 17018, cores: 1)
+spawned uWSGI worker 16 (pid: 17019, cores: 1)
+unable to stat() /data/django/firstproject/moon/settings.py, events will be triggered as soon as the file is created
+Fri Jan  7 01:06:20 2022 - *** /data/django/firstproject/moon/settings.py has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 6 (pid: 17009)...
+Gracefully killing worker 3 (pid: 17006)...
+Gracefully killing worker 7 (pid: 17010)...
+Gracefully killing worker 4 (pid: 17007)...
+Gracefully killing worker 5 (pid: 17008)...
+Gracefully killing worker 8 (pid: 17011)...
+Gracefully killing worker 2 (pid: 17005)...
+Gracefully killing worker 9 (pid: 17012)...
+Gracefully killing worker 10 (pid: 17013)...
+Gracefully killing worker 11 (pid: 17014)...
+Gracefully killing worker 13 (pid: 17016)...
+Gracefully killing worker 12 (pid: 17015)...
+Gracefully killing worker 15 (pid: 17018)...
+Gracefully killing worker 14 (pid: 17017)...
+Gracefully killing worker 16 (pid: 17019)...
+Gracefully killing worker 1 (pid: 17004)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 10 buried after 1 seconds
+worker 11 buried after 1 seconds
+worker 12 buried after 1 seconds
+worker 13 buried after 1 seconds
+worker 14 buried after 1 seconds
+worker 15 buried after 1 seconds
+worker 16 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/sites
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/data/django/firstproject/firstproject.sock)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 7) ***
+[uWSGI] getting INI configuration from firstproject.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan  7 01:06:21 2022] ***
+compiled with version: 9.3.0 on 06 January 2022 13:07:01
+os: Linux-5.11.0-1023-aws #24~20.04.1-Ubuntu SMP Fri Dec 3 13:46:41 UTC 2021
+nodename: ip-172-31-37-35
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/sites
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /data/django/firstproject
+your processes number limit is 3824
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /data/django/firstproject/firstproject.sock fd 3
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /data/django/firstproject/myvenv
+Set PythonHome to /data/django/firstproject/myvenv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55a7a2c97e10
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1239640 bytes (1210 KB) for 16 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a7a2c97e10 pid: 17003 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 17003)
+spawned uWSGI worker 1 (pid: 17029, cores: 1)
+spawned uWSGI worker 2 (pid: 17030, cores: 1)
+spawned uWSGI worker 3 (pid: 17031, cores: 1)
+spawned uWSGI worker 4 (pid: 17032, cores: 1)
+spawned uWSGI worker 5 (pid: 17033, cores: 1)
+spawned uWSGI worker 6 (pid: 17034, cores: 1)
+spawned uWSGI worker 7 (pid: 17035, cores: 1)
+spawned uWSGI worker 8 (pid: 17036, cores: 1)
+spawned uWSGI worker 9 (pid: 17037, cores: 1)
+spawned uWSGI worker 10 (pid: 17038, cores: 1)
+spawned uWSGI worker 11 (pid: 17039, cores: 1)
+spawned uWSGI worker 12 (pid: 17040, cores: 1)
+spawned uWSGI worker 13 (pid: 17041, cores: 1)
+spawned uWSGI worker 14 (pid: 17042, cores: 1)
+spawned uWSGI worker 15 (pid: 17043, cores: 1)
+spawned uWSGI worker 16 (pid: 17044, cores: 1)
+Fri Jan  7 01:09:14 2022 - *** /data/django/firstproject/moon/settings.py has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 17029)...
+Gracefully killing worker 2 (pid: 17030)...
+Gracefully killing worker 3 (pid: 17031)...
+Gracefully killing worker 4 (pid: 17032)...
+Gracefully killing worker 5 (pid: 17033)...
+Gracefully killing worker 6 (pid: 17034)...
+Gracefully killing worker 7 (pid: 17035)...
+Gracefully killing worker 8 (pid: 17036)...
+Gracefully killing worker 9 (pid: 17037)...
+Gracefully killing worker 10 (pid: 17038)...
+Gracefully killing worker 11 (pid: 17039)...
+Gracefully killing worker 12 (pid: 17040)...
+Gracefully killing worker 13 (pid: 17041)...
+Gracefully killing worker 14 (pid: 17042)...
+Gracefully killing worker 15 (pid: 17043)...
+Gracefully killing worker 16 (pid: 17044)...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+worker 9 buried after 2 seconds
+worker 10 buried after 2 seconds
+worker 11 buried after 2 seconds
+worker 12 buried after 2 seconds
+worker 13 buried after 2 seconds
+worker 14 buried after 2 seconds
+worker 15 buried after 2 seconds
+worker 16 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/sites
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/data/django/firstproject/firstproject.sock)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 7) ***
+[uWSGI] getting INI configuration from firstproject.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan  7 01:09:16 2022] ***
+compiled with version: 9.3.0 on 06 January 2022 13:07:01
+os: Linux-5.11.0-1023-aws #24~20.04.1-Ubuntu SMP Fri Dec 3 13:46:41 UTC 2021
+nodename: ip-172-31-37-35
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/sites
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /data/django/firstproject
+your processes number limit is 3824
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /data/django/firstproject/firstproject.sock fd 3
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /data/django/firstproject/myvenv
+Set PythonHome to /data/django/firstproject/myvenv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557b4b54be90
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1239640 bytes (1210 KB) for 16 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x557b4b54be90 pid: 17003 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 17003)
+spawned uWSGI worker 1 (pid: 17109, cores: 1)
+spawned uWSGI worker 2 (pid: 17110, cores: 1)
+spawned uWSGI worker 3 (pid: 17111, cores: 1)
+spawned uWSGI worker 4 (pid: 17112, cores: 1)
+spawned uWSGI worker 5 (pid: 17113, cores: 1)
+spawned uWSGI worker 6 (pid: 17114, cores: 1)
+spawned uWSGI worker 7 (pid: 17115, cores: 1)
+spawned uWSGI worker 8 (pid: 17116, cores: 1)
+spawned uWSGI worker 9 (pid: 17117, cores: 1)
+spawned uWSGI worker 10 (pid: 17118, cores: 1)
+spawned uWSGI worker 11 (pid: 17119, cores: 1)
+spawned uWSGI worker 12 (pid: 17120, cores: 1)
+spawned uWSGI worker 13 (pid: 17121, cores: 1)
+spawned uWSGI worker 14 (pid: 17122, cores: 1)
+spawned uWSGI worker 15 (pid: 17123, cores: 1)
+spawned uWSGI worker 16 (pid: 17124, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+Sat Jan  8 20:38:46 2022 - received message 0 from emperor
+worker 2 buried after 4 seconds
+worker 3 buried after 4 seconds
+worker 5 buried after 4 seconds
+worker 7 buried after 4 seconds
+worker 8 buried after 4 seconds
+worker 9 buried after 4 seconds
+worker 10 buried after 4 seconds
+worker 13 buried after 4 seconds
+worker 16 buried after 4 seconds
+worker 1 buried after 5 seconds
+worker 4 buried after 5 seconds
+worker 6 buried after 5 seconds
+worker 11 buried after 5 seconds
+worker 12 buried after 5 seconds
+worker 14 buried after 5 seconds
+worker 15 buried after 5 seconds
+goodbye to uWSGI.
+VACUUM WARNING: unix socket /data/django/firstproject/firstproject.sock changed inode. Skip removal
+*** Starting uWSGI 2.0.20 (64bit) on [Sat Jan  8 11:41:42 2022] ***
+compiled with version: 9.3.0 on 06 January 2022 13:07:01
+os: Linux-5.11.0-1023-aws #24~20.04.1-Ubuntu SMP Fri Dec 3 13:46:41 UTC 2021
+nodename: ip-172-31-37-35
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/sites
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /data/django/firstproject
+your processes number limit is 3824
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /data/django/firstproject/firstproject.sock fd 3
+setuid() to 1000
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /data/django/firstproject/myvenv
+Set PythonHome to /data/django/firstproject/myvenv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558e4328b370
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1239640 bytes (1210 KB) for 16 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x558e4328b370 pid: 465 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 465)
+spawned uWSGI worker 1 (pid: 704, cores: 1)
+spawned uWSGI worker 2 (pid: 705, cores: 1)
+spawned uWSGI worker 3 (pid: 707, cores: 1)
+spawned uWSGI worker 4 (pid: 708, cores: 1)
+spawned uWSGI worker 5 (pid: 709, cores: 1)
+spawned uWSGI worker 6 (pid: 712, cores: 1)
+spawned uWSGI worker 7 (pid: 713, cores: 1)
+spawned uWSGI worker 8 (pid: 714, cores: 1)
+spawned uWSGI worker 9 (pid: 715, cores: 1)
+spawned uWSGI worker 10 (pid: 716, cores: 1)
+spawned uWSGI worker 11 (pid: 717, cores: 1)
+spawned uWSGI worker 12 (pid: 718, cores: 1)
+spawned uWSGI worker 13 (pid: 719, cores: 1)
+spawned uWSGI worker 14 (pid: 720, cores: 1)
+spawned uWSGI worker 15 (pid: 721, cores: 1)
+spawned uWSGI worker 16 (pid: 728, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+Sun Jan  9 16:22:05 2022 - received message 0 from emperor
+worker 1 buried after 0 seconds
+worker 2 buried after 0 seconds
+worker 3 buried after 0 seconds
+worker 4 buried after 0 seconds
+worker 5 buried after 0 seconds
+worker 6 buried after 0 seconds
+worker 7 buried after 0 seconds
+worker 8 buried after 0 seconds
+worker 9 buried after 0 seconds
+worker 10 buried after 0 seconds
+worker 11 buried after 0 seconds
+worker 12 buried after 0 seconds
+worker 13 buried after 0 seconds
+worker 14 buried after 0 seconds
+worker 15 buried after 0 seconds
+worker 16 buried after 0 seconds
+goodbye to uWSGI.
+unlink(): Permission denied [core/uwsgi.c line 1662]
+*** Starting uWSGI 2.0.20 (64bit) on [Sun Jan  9 07:23:24 2022] ***
+compiled with version: 9.3.0 on 06 January 2022 13:07:01
+os: Linux-5.11.0-1023-aws #24~20.04.1-Ubuntu SMP Fri Dec 3 13:46:41 UTC 2021
+nodename: ip-172-31-37-35
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/uwsgi/sites
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /data/django/firstproject
+your processes number limit is 3824
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /data/django/firstproject/firstproject.sock fd 3
+setuid() to 1000
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /data/django/firstproject/myvenv
+Set PythonHome to /data/django/firstproject/myvenv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55df6d1da370
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1239640 bytes (1210 KB) for 16 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x55df6d1da370 pid: 475 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 475)
+spawned uWSGI worker 1 (pid: 663, cores: 1)
+spawned uWSGI worker 2 (pid: 664, cores: 1)
+spawned uWSGI worker 3 (pid: 665, cores: 1)
+spawned uWSGI worker 4 (pid: 666, cores: 1)
+spawned uWSGI worker 5 (pid: 667, cores: 1)
+spawned uWSGI worker 6 (pid: 668, cores: 1)
+spawned uWSGI worker 7 (pid: 669, cores: 1)
+spawned uWSGI worker 8 (pid: 670, cores: 1)
+spawned uWSGI worker 9 (pid: 671, cores: 1)
+spawned uWSGI worker 10 (pid: 672, cores: 1)
+spawned uWSGI worker 11 (pid: 673, cores: 1)
+spawned uWSGI worker 12 (pid: 674, cores: 1)
+spawned uWSGI worker 13 (pid: 675, cores: 1)
+spawned uWSGI worker 14 (pid: 676, cores: 1)
+spawned uWSGI worker 15 (pid: 677, cores: 1)
+spawned uWSGI worker 16 (pid: 678, cores: 1)

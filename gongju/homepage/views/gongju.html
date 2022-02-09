@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> GongJu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    function goURL(url)
+    {
+      targetURL.document.location.href= "/list?floor=" + url;
+    }
+  </script>
+  <style type="text/css">
+      *, p{
+            font-family: 'Dongle', sans-serif;
+            font-size: 20px;
+          }
+
+          h1 {
+              font-family: 'Dongle', sans-serif;
+              font-size: 80px;
+          }
+          table {
+            width: 400px;
+      }
+      body {
+        text-align : center;
+      }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f1f1f1;
+      }
+      li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+      }
+      li a.active {
+          background-color: #4CAF50;
+          color: white;
+      }
+      li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+      }
+      td, th {
+      	text-align: center;
+      }
+
+      .center {
+        margin : auto;
+        text-align : center;
+      }
+
+  </style>
+
+</head>
+
+<body>
+  <h1> 인천 국제 공항 주차장 혼잡도 </h1>
+  <br>
+
+  <ul class="nav center">
+          <li id="T1"><a href="/T1">T1여객터미널</a></li>
+          <li><a href="/T2">T2여객터미널</a></li>
+  </ul>
+  <br>
+
+  <table class="center" border=1>
+    <tr>
+    	<th> 날짜 </th>
+    	<th> 층  </th>
+    	<th> 주차 수 </th>
+    	<th> 총 가능 수  </th>
+    </tr>
+    <% for(let i=0; i < data.length ; i++){ %>
+      <tr>
+      	<td> <%= data[i].datetm %> </td>
+      	<td> <%= data[i].floor %> </td>
+      	<td> <%= data[i].parking %> </td>
+      	<td> <%= data[i].parkingarea %> </td>
+      </tr>
+    <% } %>
+  </table>
+  <br>
+
+  <div>
+    <label for="park">Choose a parking:</label>
+      <select id="park" onChange="javascript:goURL(this.value)">
+        <option value="">--Please choose an option--</option>
+        <% for(let i=0; i < data.length ; i++){ %>
+          <option value="<%= data[i].floor %>"><%= data[i].floor %></option>
+        <% } %>
+      </select>
+  </div>
+
+  <iframe name=targetURL class="iframe-preview center" width="30%" height="300px" style="border:none;" src="http://3.35.103.171:3000/list"></iframe>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Life Weather Data</title>
+</head>
+<body>
+<h1>Life Weather Data</h1>
+<form name='mongoform' >
+      <input type='button' value='Life - Weather API get data' onclick='document.targetURL.location.href="/getdata"'>
+      <p>
+      <input type='button' value='Life - Weather Collection data' onclick='document.targetURL.location.href="/list"'>
+      <p>
+      areaNo <input type='text' size='12' name='input'>
+      <input type='button' value='get' onclick='document.targetURL.location.href="/get?input="+document.mongoform.input.value'>
+      <p>
+</form>
+
+<iframe name=targetURL class="iframe-preview center" width="80%" height="800" style="border:none;" src="http://localhost:3000/list"></iframe>
+
+</body>
+</html>
